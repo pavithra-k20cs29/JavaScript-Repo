@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .switch{
+           border: 1px solid black;
+           background-color: grey;
+           width: 400px;
+           margin-left: 600px;  
+       }
+       #bulb{
+           width: 200px;
+       }
+       #cat{
+           width: 400px;
+       }
+   </style>
+    <script>
+        function ON(){
+            document.getElementById("bulb").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
+            document.getElementById("cat").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png";
+            document.getElementById("head").innerHTML = "Switched ON";
+        }
+        function OFF(){
+            document.getElementById("bulb").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+            document.getElementById("cat").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png";
+            document.getElementById("head").innerHTML = "Switched OFF";
+        }
+    </script>
+  </head>
+  <body>
+    <div class="bg-black">
+        <div class="off-bulb d-flex justify-content-center">
+            <img id="bulb" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png">
+        </div>
+        <div class="eye d-flex justify-content-center">
+           <img id="cat" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png">
+        </div>
+        <div class="switch ">
+            <div class="switch-head d-flex justify-content-center">
+            <h5 id="head">Switched OFF</h5>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-danger m-2" onclick="OFF();">OFF</button>
+                <button type="button" class="btn btn-success m-2" onclick="ON();">ON</button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
