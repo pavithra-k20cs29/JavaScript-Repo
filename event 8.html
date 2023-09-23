@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Down() {
+            var a = Number(document.getElementById("text1").value);
+            for (i = 1; i <= a; i++) {
+
+                document.getElementById("Sel").innerHTML += "<option>" + i + "</option>";
+            }
+        }
+        function task() {
+            var c = Number(document.getElementById("Sel").value);
+            for (i = 1; i <= c; i++) {
+
+                document.getElementById("Sele").innerHTML += "<option>" + i + "</option>";
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    Enter a Value : <input type="text" id="text1">
+    <button onclick="Down()">Click</button>
+    <select id="Sel" onchange="task()"></select>
+    <select name="" id="Sele"></select>
+</body>
+
+</html>

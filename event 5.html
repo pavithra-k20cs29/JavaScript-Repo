@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function Arithmetic(){
+            let v1=document.getElementById("value1").value
+            let v2=document.getElementById("value2").value
+            document.getElementById("arith 1").innerHTML=v1+v2;
+            document.getElementById("arith 2").innerHTML=v1-v2;
+            document.getElementById("arith 3").innerHTML=v1*v2;
+            document.getElementById("arith 4").innerHTML=v1/v2;
+            document.getElementById("arith 5").innerHTML=v1%v2;
+        }
+    </script>
+</head>
+<body>
+    Enter the value :<input type="text" id="value1">
+    Enter the value :<input type="text" id="value2">
+    <input type="button" value="Calculate" onclick="Arithmetic()">
+    <h3 id="arith 1"></h3>
+    <h3 id="arith 2"></h3>
+    <h3 id="arith 3"></h3>
+    <h3 id="arith 4"></h3>
+    <h3 id="arith 5"></h3>
+</body>
+</html>

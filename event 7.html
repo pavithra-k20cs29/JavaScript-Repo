@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Display(){
+            var Tex= Number(document.getElementById("Text").value);
+            for (i=0;i<=Tex;i++)
+            {
+                document.getElementById("Dropdown").innerHTML+="<option>" + i +"</option>";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter a value : <input type="text" id="Text" onkeyup="Display()">
+    <select id="Dropdown"></select>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    Password : <input type="password" id="pwd"> 
+    <script>
+        var name= window.prompt('Enter your Name :');
+        var dob= window.prompt('Enter your DOB: ');
+        var pw= name.slice(0,4)+dob;
+        document.getElementById("pwd").value=pw;
+    </script>
+</body>
+</html>

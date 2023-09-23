@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function disp(){
+            var opt=Number(document.getElementById("text1").value);
+            for(i=0;i<=opt;i++)
+            {
+                document.getElementById("Drop").innerHTML+=  "<option>"+i+"</option>";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the value : <input type="text" id="text1">
+    
+    <input type="button" value="Display" onclick="disp()">
+    <select id="Drop"></select>
+</body>
+</html>

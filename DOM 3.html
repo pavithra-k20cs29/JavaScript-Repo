@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        button{
+          background-color: rgb(7, 11, 58);
+          color: aliceblue;
+          margin-top: 20px;
+          margin: 20px;
+          margin-left:250px ;
+          border-radius: 5px 5px 5px 5px;
+          border: 2px solid rgb(7, 11, 58);
+        } 
+        .light{
+            background-color: rgb(7, 11, 58);
+           border: 2px solid rgb(7, 11, 58);
+           height: 220px;
+           width: 100px;
+           margin-left: 350px;
+           border-radius: 20px;
+        }
+        .button{
+            padding-top: -100px;
+            margin-top: -200px;
+            
+        }
+        #red{
+            background-color: gray;
+            border: 2px solid gray;
+            border-radius: 20px;
+            height: 30px;
+            width: 30px;
+            margin: 30px;
+        }
+        #yellow{
+            background-color: gray;
+            border: 2px solid gray;
+            border-radius: 20px;
+            height: 30px;
+            width: 30px;
+            margin: 30px;
+        }
+        #green{
+            background-color: gray;
+            border: 2px solid gray;
+            border-radius: 20px;
+            height: 30px;
+            width: 30px;
+            margin: 30px;
+
+        }
+        .move{
+            margin-left: 350px;
+        }
+        body{
+            background-color: aqua;
+        }
+        
+    </style>
+    <script>
+        function stop(){
+            var btn1=document.getElementById("btred");
+            var light1=document.getElementById("red");
+            var btn2=document.getElementById("btyellow");
+            var light2=document.getElementById("yellow");
+            var btn3=document.getElementById("btgreen");
+            var light3=document.getElementById("green");
+            btn1.style.backgroundColor="red";
+            light1.style.backgroundColor="red";
+            btn2.style.backgroundColor="";
+            light2.style.backgroundColor="";
+            btn3.style.backgroundColor="";
+            light3.style.backgroundColor="";
+        }
+        function ready(){
+            var btn2=document.getElementById("btyellow");
+            var light2=document.getElementById("yellow");
+            var btn3=document.getElementById("btred");
+            var light3=document.getElementById("red");
+            var btn4=document.getElementById("btgreen");
+            var light4=document.getElementById("green");
+            btn2.style.backgroundColor="yellow";
+            light2.style.backgroundColor="yellow";
+            btn3.style.backgroundColor="";
+            light3.style.backgroundColor="";
+            btn4.style.backgroundColor="";
+            light4.style.backgroundColor="";
+        }
+        function go(){
+            var btn3=document.getElementById("btgreen");
+            var light3=document.getElementById("green");
+            var btn4=document.getElementById("btred");
+            var light4=document.getElementById("red");
+            var btn5=document.getElementById("btyellow");
+            var light5=document.getElementById("yellow");
+            btn3.style.backgroundColor="green";
+            light3.style.backgroundColor="green";
+            btn4.style.backgroundColor="";
+            light4.style.backgroundColor="";
+            btn5.style.backgroundColor="";
+            light5.style.backgroundColor="";
+        }    
+    </script>
+</head>
+<body>
+    <!-- <h3 style="color: black;" class="move" >Traffic Light</h3> -->
+    <div class="container">
+        <h1 style="color: rgb(7, 11, 58);" class="move " >Traffic Light</h1>
+        <div class="full">
+            <div class="light">
+                <div id="red">
+
+                </div>
+                <div id="yellow">
+
+                </div>
+                <div id="green">
+
+                </div>
+            </div>
+            <div class="button">
+                <button id="btred" onclick="stop()">Stop</button> <br>
+                <button id="btyellow" onclick="ready()">Ready</button>  <br>
+                <button id="btgreen" onclick="go()">Go</button> <br>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isnull(){
+            let c1=document.getElementById("input1").value;
+            let c2=document.getElementById("input2").value;
+            if(c1==="")
+            {
+                alert("One of your data is empty,Kindly fill it again!!");
+            }
+            else if(c2==="")
+            {
+                alert("One of your data is empty,Kindly fill it again!!");
+            }
+            else
+            {
+                alert("Great Job");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    Enter Input 1 :<input type=" text " id="input1" ><br>
+    Enter Input 2 :<input type=" text" id="input2" ><br><br>
+    <input type="button" value="Validate" onclick="isnull()">
+</body>
+</html>
