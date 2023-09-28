@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function validateform() {
+            var number = document.myform.tel.value;
+
+            if (number.length <= 10) {
+                alert("Perfect!! WEll DONE!!");
+                return true;
+            }
+            else {
+                alert("OOPS!! Numbers must be 10 digits!!")
+            }
+        }  
+    </script>
+
+    <body>
+        <form name="myform" onsubmit="validateform()">
+            Enter your mobile number : <input type="tel" name="tel">
+            <input type="submit" value="register">
+        </form>
+    </body>
+
+</html>

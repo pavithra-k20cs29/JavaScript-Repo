@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn(){
+            var inputbox=document.getElementById("txt").value;
+            let Regpattern=/^[a-zA-Z0-9_]+$/;
+            if(Regpattern.test(inputbox))
+            {
+                alert("PERFECT ! Your Password is Valid.");
+                return true;
+            }
+            else
+            {
+                alert("OOPss ! Password is Invalid.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter Your Name : <input type="password" value="" id="txt">
+    <input type="button" value="Validate" onclick="btn()">
+</body>
+</html>
