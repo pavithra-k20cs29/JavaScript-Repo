@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let doubleChars=(str)=>str.split("")
+        .map((p) => `${p}${p}`)
+        .join("");
+        alert(doubleChars("Adrian"));
+        alert(doubleChars("ssssnake"));
+    </script>
+</body>
+</html>
